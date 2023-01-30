@@ -23,7 +23,12 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: [{ loader: '@svgr/webpack', options: { typescript: true, dimensions: false } }],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
