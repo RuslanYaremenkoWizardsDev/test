@@ -1,4 +1,8 @@
 .content{
     position: absolute;
     top: 64px;
+    left: 0px;
+    background: #111827;
+    height: calc(100% - 64px);
+    width: 100%;
 }

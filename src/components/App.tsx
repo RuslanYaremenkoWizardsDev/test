@@ -1,15 +1,13 @@
 import React from 'react';
-import { Counter } from './Counter';
-import { Hello } from './Hello';
 import Header from './Header';
 import Main from './Main';
+import Uploader from './Uploader';
 
 export const App = () => (
   <>
     <Header/>
     <Main>
-      <Hello name={ 'Document Uploader' } />
-      <Counter />
+      <Uploader />
     </Main>
   </>
 );

@@ -1,0 +1,114 @@
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.description__title{
+    width: 288px;
+    font-family: 'Aeonik Fono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    background: linear-gradient(255.02deg, #FFEE9E 0%, #FE85A6 50.52%, #AE8DF5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.description__text{
+    width: 288px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #96A8C7;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.uploader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.uploader__content{
+    width: 848px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    gap: 24px;
+
+    width: 388px;
+    height: 344px;
+    background: #232F48;
+    border-radius: 6px;
+}
+.card span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #CED9E9;
+}
+.card svg{
+    width: 40px;
+    height: 40px;
+}
+.tabs{
+    display: flex;
+}
+.tabs__content{
+    display: flex;
+    flex-direction: column;
+    background: #192337;
+    padding: 32px;
+    height: 580px;
+    width: 848px;
+}
+.header_tabs{
+    font-family: 'Aeonik Fono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    color: #CED9E9;
+}
+@media (min-width: 1440){
+    .description{
+        width: 352px;
+        height: 144px;
+    }
+    .uploader__content{
+        width: 848px;
+    }
+    .description__text{
+        width: 288px;
+    }
+    .description__title{
+        width: 288px;
+    }
+}
